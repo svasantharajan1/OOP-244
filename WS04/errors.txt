@@ -1,0 +1,4 @@
+main_prof.cpp: In function ‘int main()’:
+main_prof.cpp:62:33: error: ‘find_similar’ was not declared in this scope
+  if (find_similar(cars, num_cars)) {
+                                 ^

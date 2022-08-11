@@ -1,0 +1,254 @@
+Script started on Tue 09 Aug 2022 01:19:23 PM EDT
+==71704== Memcheck, a memory error detector
+==71704== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==71704== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==71704== Command: ms
+==71704== 
+Loading Data
+Seneca Library Application
+ 1- Add New Publication
+ 2- Remove Publication
+ 3- Checkout publication from library
+ 4- Return publication to library
+ 0- Exit
+> 2
+Removing publication from the library
+Choose the type of publication:
+ 1- Book
+ 2- Publication
+ 0- Exit
+> 1
+Publication Title: e
+Select one of the following found matches:
+ Row  |LocID | Title                          |Mem ID | Date       | Author          |
+------+------+--------------------------------+-------+------------+-----------------|
+> N (Next page
+> X (to Exit)
+> Row Number(selec publication)
+> ^C==71704== 
+==71704== Process terminating with default action of signal 2 (SIGINT)
+==71704==    at 0x580DB40: __read_nocancel (in /usr/lib64/libc-2.17.so)
+==71704==    by 0x5799D53: _IO_file_underflow@@GLIBC_2.2.5 (in /usr/lib64/libc-2.17.so)
+==71704==    by 0x579AF21: _IO_default_uflow (in /usr/lib64/libc-2.17.so)
+==71704==    by 0x579578D: getc (in /usr/lib64/libc-2.17.so)
+==71704==    by 0x4F3388C: syncgetc (stdio_sync_filebuf.h:225)
+==71704==    by 0x4F3388C: __gnu_cxx::stdio_sync_filebuf<char, std::char_traits<char> >::underflow() (stdio_sync_filebuf.h:133)
+==71704==    by 0x4F42135: sgetc (streambuf:351)
+==71704==    by 0x4F42135: sgetc (streambuf:345)
+==71704==    by 0x4F42135: std::istream::peek() (istream.tcc:638)
+==71704==    by 0x405552: sdds::PublicationSelector::select() const (PublicationSelector.cpp:52)
+==71704==    by 0x4059EF: sdds::PublicationSelector::run() (PublicationSelector.cpp:154)
+==71704==    by 0x403DAF: sdds::LibApp::search(int) (LibApp.cpp:156)
+==71704==    by 0x404334: sdds::LibApp::removePublication() (LibApp.cpp:281)
+==71704==    by 0x4048A3: sdds::LibApp::run() (LibApp.cpp:389)
+==71704==    by 0x404B8A: runLibApp(char const*) (LibAppMain_prof.cpp:17)
+==71704== 
+==71704== HEAP SUMMARY:
+==71704==     in use at exit: 1,303 bytes in 43 blocks
+==71704==   total heap usage: 71 allocs, 28 frees, 85,936 bytes allocated
+==71704== 
+==71704== 5 bytes in 1 blocks are still reachable in loss record 1 of 25
+==71704==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==71704==    by 0x404DAD: sdds::MenuItem::setMenu(char const*) (Menu.cpp:35)
+==71704==    by 0x405229: sdds::Menu::operator<<(char const*) (Menu.cpp:140)
+==71704==    by 0x4046CC: sdds::LibApp::LibApp(char const*) (LibApp.cpp:341)
+==71704==    by 0x404B7B: runLibApp(char const*) (LibAppMain_prof.cpp:16)
+==71704==    by 0x404C9F: main (LibAppMain_prof.cpp:28)
+==71704== 
+==71704== 8 bytes in 1 blocks are still reachable in loss record 2 of 25
+==71704==    at 0x4C2A593: operator new(unsigned long) (vg_replace_malloc.c:344)
+==71704==    by 0x4051E5: sdds::Menu::operator<<(char const*) (Menu.cpp:139)
+==71704==    by 0x4046CC: sdds::LibApp::LibApp(char const*) (LibApp.cpp:341)
+==71704==    by 0x404B7B: runLibApp(char const*) (LibAppMain_prof.cpp:16)
+==71704==    by 0x404C9F: main (LibAppMain_prof.cpp:28)
+==71704== 
+==71704== 8 bytes in 1 blocks are still reachable in loss record 3 of 25
+==71704==    at 0x4C2A593: operator new(unsigned long) (vg_replace_malloc.c:344)
+==71704==    by 0x4051E5: sdds::Menu::operator<<(char const*) (Menu.cpp:139)
+==71704==    by 0x4046D9: sdds::LibApp::LibApp(char const*) (LibApp.cpp:341)
+==71704==    by 0x404B7B: runLibApp(char const*) (LibAppMain_prof.cpp:16)
+==71704==    by 0x404C9F: main (LibAppMain_prof.cpp:28)
+==71704== 
+==71704== 8 bytes in 1 blocks are still reachable in loss record 4 of 25
+==71704==    at 0x4C2A593: operator new(unsigned long) (vg_replace_malloc.c:344)
+==71704==    by 0x4051E5: sdds::Menu::operator<<(char const*) (Menu.cpp:139)
+==71704==    by 0x4046F0: sdds::LibApp::LibApp(char const*) (LibApp.cpp:342)
+==71704==    by 0x404B7B: runLibApp(char const*) (LibAppMain_prof.cpp:16)
+==71704==    by 0x404C9F: main (LibAppMain_prof.cpp:28)
+==71704== 
+==71704== 8 bytes in 1 blocks are still reachable in loss record 5 of 25
+==71704==    at 0x4C2A593: operator new(unsigned long) (vg_replace_malloc.c:344)
+==71704==    by 0x4051E5: sdds::Menu::operator<<(char const*) (Menu.cpp:139)
+==71704==    by 0x4046FD: sdds::LibApp::LibApp(char const*) (LibApp.cpp:342)
+==71704==    by 0x404B7B: runLibApp(char const*) (LibAppMain_prof.cpp:16)
+==71704==    by 0x404C9F: main (LibAppMain_prof.cpp:28)
+==71704== 
+==71704== 8 bytes in 1 blocks are still reachable in loss record 6 of 25
+==71704==    at 0x4C2A593: operator new(unsigned long) (vg_replace_malloc.c:344)
+==71704==    by 0x4051E5: sdds::Menu::operator<<(char const*) (Menu.cpp:139)
+==71704==    by 0x40470A: sdds::LibApp::LibApp(char const*) (LibApp.cpp:342)
+==71704==    by 0x404B7B: runLibApp(char const*) (LibAppMain_prof.cpp:16)
+==71704==    by 0x404C9F: main (LibAppMain_prof.cpp:28)
+==71704== 
+==71704== 8 bytes in 1 blocks are still reachable in loss record 7 of 25
+==71704==    at 0x4C2A593: operator new(unsigned long) (vg_replace_malloc.c:344)
+==71704==    by 0x4051E5: sdds::Menu::operator<<(char const*) (Menu.cpp:139)
+==71704==    by 0x404717: sdds::LibApp::LibApp(char const*) (LibApp.cpp:342)
+==71704==    by 0x404B7B: runLibApp(char const*) (LibAppMain_prof.cpp:16)
+==71704==    by 0x404C9F: main (LibAppMain_prof.cpp:28)
+==71704== 
+==71704== 8 bytes in 1 blocks are still reachable in loss record 8 of 25
+==71704==    at 0x4C2A593: operator new(unsigned long) (vg_replace_malloc.c:344)
+==71704==    by 0x4051E5: sdds::Menu::operator<<(char const*) (Menu.cpp:139)
+==71704==    by 0x40472E: sdds::LibApp::LibApp(char const*) (LibApp.cpp:343)
+==71704==    by 0x404B7B: runLibApp(char const*) (LibAppMain_prof.cpp:16)
+==71704==    by 0x404C9F: main (LibAppMain_prof.cpp:28)
+==71704== 
+==71704== 8 bytes in 1 blocks are still reachable in loss record 9 of 25
+==71704==    at 0x4C2A593: operator new(unsigned long) (vg_replace_malloc.c:344)
+==71704==    by 0x4051E5: sdds::Menu::operator<<(char const*) (Menu.cpp:139)
+==71704==    by 0x40473B: sdds::LibApp::LibApp(char const*) (LibApp.cpp:343)
+==71704==    by 0x404B7B: runLibApp(char const*) (LibAppMain_prof.cpp:16)
+==71704==    by 0x404C9F: main (LibAppMain_prof.cpp:28)
+==71704== 
+==71704== 12 bytes in 1 blocks are still reachable in loss record 10 of 25
+==71704==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==71704==    by 0x404DAD: sdds::MenuItem::setMenu(char const*) (Menu.cpp:35)
+==71704==    by 0x405229: sdds::Menu::operator<<(char const*) (Menu.cpp:140)
+==71704==    by 0x4046D9: sdds::LibApp::LibApp(char const*) (LibApp.cpp:341)
+==71704==    by 0x404B7B: runLibApp(char const*) (LibAppMain_prof.cpp:16)
+==71704==    by 0x404C9F: main (LibAppMain_prof.cpp:28)
+==71704== 
+==71704== 19 bytes in 1 blocks are still reachable in loss record 11 of 25
+==71704==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==71704==    by 0x404DAD: sdds::MenuItem::setMenu(char const*) (Menu.cpp:35)
+==71704==    by 0x405229: sdds::Menu::operator<<(char const*) (Menu.cpp:140)
+==71704==    by 0x4046FD: sdds::LibApp::LibApp(char const*) (LibApp.cpp:342)
+==71704==    by 0x404B7B: runLibApp(char const*) (LibAppMain_prof.cpp:16)
+==71704==    by 0x404C9F: main (LibAppMain_prof.cpp:28)
+==71704== 
+==71704== 20 bytes in 1 blocks are still reachable in loss record 12 of 25
+==71704==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==71704==    by 0x404DAD: sdds::MenuItem::setMenu(char const*) (Menu.cpp:35)
+==71704==    by 0x405229: sdds::Menu::operator<<(char const*) (Menu.cpp:140)
+==71704==    by 0x4046F0: sdds::LibApp::LibApp(char const*) (LibApp.cpp:342)
+==71704==    by 0x404B7B: runLibApp(char const*) (LibAppMain_prof.cpp:16)
+==71704==    by 0x404C9F: main (LibAppMain_prof.cpp:28)
+==71704== 
+==71704== 22 bytes in 1 blocks are still reachable in loss record 13 of 25
+==71704==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==71704==    by 0x404DAD: sdds::MenuItem::setMenu(char const*) (Menu.cpp:35)
+==71704==    by 0x405229: sdds::Menu::operator<<(char const*) (Menu.cpp:140)
+==71704==    by 0x40472E: sdds::LibApp::LibApp(char const*) (LibApp.cpp:343)
+==71704==    by 0x404B7B: runLibApp(char const*) (LibAppMain_prof.cpp:16)
+==71704==    by 0x404C9F: main (LibAppMain_prof.cpp:28)
+==71704== 
+==71704== 27 bytes in 1 blocks are still reachable in loss record 14 of 25
+==71704==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==71704==    by 0x404DAD: sdds::MenuItem::setMenu(char const*) (Menu.cpp:35)
+==71704==    by 0x404F66: sdds::Menu::Menu(char const*) (Menu.cpp:82)
+==71704==    by 0x40466E: sdds::LibApp::LibApp(char const*) (LibApp.cpp:336)
+==71704==    by 0x404B7B: runLibApp(char const*) (LibAppMain_prof.cpp:16)
+==71704==    by 0x404C9F: main (LibAppMain_prof.cpp:28)
+==71704== 
+==71704== 30 bytes in 1 blocks are still reachable in loss record 15 of 25
+==71704==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==71704==    by 0x404DAD: sdds::MenuItem::setMenu(char const*) (Menu.cpp:35)
+==71704==    by 0x405229: sdds::Menu::operator<<(char const*) (Menu.cpp:140)
+==71704==    by 0x404717: sdds::LibApp::LibApp(char const*) (LibApp.cpp:342)
+==71704==    by 0x404B7B: runLibApp(char const*) (LibAppMain_prof.cpp:16)
+==71704==    by 0x404C9F: main (LibAppMain_prof.cpp:28)
+==71704== 
+==71704== 32 bytes in 1 blocks are still reachable in loss record 16 of 25
+==71704==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==71704==    by 0x404DAD: sdds::MenuItem::setMenu(char const*) (Menu.cpp:35)
+==71704==    by 0x404F66: sdds::Menu::Menu(char const*) (Menu.cpp:82)
+==71704==    by 0x404657: sdds::LibApp::LibApp(char const*) (LibApp.cpp:336)
+==71704==    by 0x404B7B: runLibApp(char const*) (LibAppMain_prof.cpp:16)
+==71704==    by 0x404C9F: main (LibAppMain_prof.cpp:28)
+==71704== 
+==71704== 34 bytes in 1 blocks are still reachable in loss record 17 of 25
+==71704==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==71704==    by 0x404DAD: sdds::MenuItem::setMenu(char const*) (Menu.cpp:35)
+==71704==    by 0x405229: sdds::Menu::operator<<(char const*) (Menu.cpp:140)
+==71704==    by 0x40470A: sdds::LibApp::LibApp(char const*) (LibApp.cpp:342)
+==71704==    by 0x404B7B: runLibApp(char const*) (LibAppMain_prof.cpp:16)
+==71704==    by 0x404C9F: main (LibAppMain_prof.cpp:28)
+==71704== 
+==71704== 36 bytes in 1 blocks are still reachable in loss record 18 of 25
+==71704==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==71704==    by 0x404DAD: sdds::MenuItem::setMenu(char const*) (Menu.cpp:35)
+==71704==    by 0x405229: sdds::Menu::operator<<(char const*) (Menu.cpp:140)
+==71704==    by 0x40473B: sdds::LibApp::LibApp(char const*) (LibApp.cpp:343)
+==71704==    by 0x404B7B: runLibApp(char const*) (LibAppMain_prof.cpp:16)
+==71704==    by 0x404C9F: main (LibAppMain_prof.cpp:28)
+==71704== 
+==71704== 63 bytes in 1 blocks are still reachable in loss record 19 of 25
+==71704==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==71704==    by 0x404DAD: sdds::MenuItem::setMenu(char const*) (Menu.cpp:35)
+==71704==    by 0x404F66: sdds::Menu::Menu(char const*) (Menu.cpp:82)
+==71704==    by 0x404685: sdds::LibApp::LibApp(char const*) (LibApp.cpp:336)
+==71704==    by 0x404B7B: runLibApp(char const*) (LibAppMain_prof.cpp:16)
+==71704==    by 0x404C9F: main (LibAppMain_prof.cpp:28)
+==71704== 
+==71704== 80 bytes in 1 blocks are still reachable in loss record 20 of 25
+==71704==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==71704==    by 0x405835: sdds::PublicationSelector::PublicationSelector(char const*, int) (PublicationSelector.cpp:119)
+==71704==    by 0x4039E6: sdds::LibApp::search(int) (LibApp.cpp:75)
+==71704==    by 0x404334: sdds::LibApp::removePublication() (LibApp.cpp:281)
+==71704==    by 0x4048A3: sdds::LibApp::run() (LibApp.cpp:389)
+==71704==    by 0x404B8A: runLibApp(char const*) (LibAppMain_prof.cpp:17)
+==71704==    by 0x404C9F: main (LibAppMain_prof.cpp:28)
+==71704== 
+==71704== 84 bytes in 4 blocks are still reachable in loss record 21 of 25
+==71704==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==71704==    by 0x40320D: sdds::Publication::read(std::istream&) (Publication.cpp:195)
+==71704==    by 0x405D62: sdds::operator>>(std::istream&, sdds::Streamable&) (Streamable.cpp:28)
+==71704==    by 0x4037A9: sdds::LibApp::load() (LibApp.cpp:51)
+==71704==    by 0x404747: sdds::LibApp::LibApp(char const*) (LibApp.cpp:344)
+==71704==    by 0x404B7B: runLibApp(char const*) (LibAppMain_prof.cpp:16)
+==71704==    by 0x404C9F: main (LibAppMain_prof.cpp:28)
+==71704== 
+==71704== 108 bytes in 5 blocks are still reachable in loss record 22 of 25
+==71704==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==71704==    by 0x401BEE: sdds::Book::read(std::istream&) (Book.cpp:97)
+==71704==    by 0x405D62: sdds::operator>>(std::istream&, sdds::Streamable&) (Streamable.cpp:28)
+==71704==    by 0x4037A9: sdds::LibApp::load() (LibApp.cpp:51)
+==71704==    by 0x404747: sdds::LibApp::LibApp(char const*) (LibApp.cpp:344)
+==71704==    by 0x404B7B: runLibApp(char const*) (LibAppMain_prof.cpp:16)
+==71704==    by 0x404C9F: main (LibAppMain_prof.cpp:28)
+==71704== 
+==71704== 123 bytes in 5 blocks are still reachable in loss record 23 of 25
+==71704==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==71704==    by 0x40320D: sdds::Publication::read(std::istream&) (Publication.cpp:195)
+==71704==    by 0x401AD3: sdds::Book::read(std::istream&) (Book.cpp:83)
+==71704==    by 0x405D62: sdds::operator>>(std::istream&, sdds::Streamable&) (Streamable.cpp:28)
+==71704==    by 0x4037A9: sdds::LibApp::load() (LibApp.cpp:51)
+==71704==    by 0x404747: sdds::LibApp::LibApp(char const*) (LibApp.cpp:344)
+==71704==    by 0x404B7B: runLibApp(char const*) (LibAppMain_prof.cpp:16)
+==71704==    by 0x404C9F: main (LibAppMain_prof.cpp:28)
+==71704== 
+==71704== 224 bytes in 4 blocks are still reachable in loss record 24 of 25
+==71704==    at 0x4C2A593: operator new(unsigned long) (vg_replace_malloc.c:344)
+==71704==    by 0x403742: sdds::LibApp::load() (LibApp.cpp:47)
+==71704==    by 0x404747: sdds::LibApp::LibApp(char const*) (LibApp.cpp:344)
+==71704==    by 0x404B7B: runLibApp(char const*) (LibAppMain_prof.cpp:16)
+==71704==    by 0x404C9F: main (LibAppMain_prof.cpp:28)
+==71704== 
+==71704== 320 bytes in 5 blocks are still reachable in loss record 25 of 25
+==71704==    at 0x4C2A593: operator new(unsigned long) (vg_replace_malloc.c:344)
+==71704==    by 0x40370D: sdds::LibApp::load() (LibApp.cpp:43)
+==71704==    by 0x404747: sdds::LibApp::LibApp(char const*) (LibApp.cpp:344)
+==71704==    by 0x404B7B: runLibApp(char const*) (LibAppMain_prof.cpp:16)
+==71704==    by 0x404C9F: main (LibAppMain_prof.cpp:28)
+==71704== 
+==71704== LEAK SUMMARY:
+==71704==    definitely lost: 0 bytes in 0 blocks
+==71704==    indirectly lost: 0 bytes in 0 blocks
+==71704==      possibly lost: 0 bytes in 0 blocks
+==71704==    still reachable: 1,303 bytes in 43 blocks
+==71704==         suppressed: 0 bytes in 0 blocks
+==71704== 
+==71704== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+
+Script done on Tue 09 Aug 2022 01:39:08 PM EDT

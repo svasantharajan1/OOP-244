@@ -1,0 +1,14 @@
+In line number 45 of your output:
+The output should be:
+In battle of United States of Auradon and Azmenistan, Azmenistan is victorious!
+             ^
+But your output is: 
+In battle of Azmenistan and United States of Auradon, Azmenistan is victorious!
+             ^
+
+Unmatched character details:
+The character in column 14 is supposed to be:
+  [U] ASCII code(85)
+but you printed
+  [A] ASCII code(65)
+

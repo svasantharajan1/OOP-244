@@ -1,0 +1,8 @@
+﻿  Robot.cpp
+C:\Users\sharm\Desktop\Workshop4P2\Project2\Project2\Robot.cpp(155,35): warning C4305: 'initializing': truncation from 'int' to 'char'
+C:\Users\sharm\Desktop\Workshop4P2\Project2\Project2\Robot.cpp(155,30): warning C4309: 'initializing': truncation of constant value
+C:\Users\sharm\Desktop\Workshop4P2\Project2\Project2\Robot.cpp(156,33): warning C4305: 'initializing': truncation from 'int' to 'char'
+C:\Users\sharm\Desktop\Workshop4P2\Project2\Project2\Robot.cpp(156,29): warning C4309: 'initializing': truncation of constant value
+C:\Users\sharm\Desktop\Workshop4P2\Project2\Project2\Robot.cpp(153,18): warning C4101: 'deciionss': unreferenced local variable
+C:\Users\sharm\Desktop\Workshop4P2\Project2\Project2\Robot.cpp(154,18): warning C4101: 'decision': unreferenced local variable
+  Project2.vcxproj -> C:\Users\sharm\Desktop\Workshop4P2\Project2\Debug\Project2.exe

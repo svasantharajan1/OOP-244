@@ -1,0 +1,3 @@
+In the previous lecture and in the lab we were brough to the topic of deriving class using resource
+from base class. In this lab I used the knowledge of rude of three in both my name and fullna ecpp 
+which derived at class. I also learn how to override virtual and non-virtual adding on from workshop 8.

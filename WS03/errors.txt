@@ -1,0 +1,6 @@
+main_prof.cpp:18:17: error: ‘sdds’ is not a namespace-name
+ using namespace sdds;
+                 ^
+main_prof.cpp:18:21: error: expected namespace-name before ‘;’ token
+ using namespace sdds;
+                     ^

@@ -1,0 +1,4 @@
+In the previous we talked about function templates and how we can call those templates,
+in this workshop I was able to use that knowledge to implement the find function which will collection that 
+is given from main, and this workshop was different as in we had to use function template not defintions 
+like the previous workshop. 

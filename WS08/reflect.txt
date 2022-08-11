@@ -1,0 +1,10 @@
+Reflection Workshop 8 - Part 2
+Student Name: Vasantharajan Sharmilann
+
+
+In our class and in this workshop we were introduced into how to use virtual function our modules, 
+which also includes creating an abstract base class. In this workshop we declared our virtual function 
+our iAccount.h. We linked those function to other function in order to work on the function. I did have error with 
+Create Account function. The error was getting was 'CheuqingAccount not instanitial no virtual overrider' and 'SavingsAccount 
+not instiate no virtual overrider found.' I realized that my declaration for my iAccount createAccount was incorrect. 
+I have to changed it to iAccount* createAccount, previous i used virtual as rest of the function. 

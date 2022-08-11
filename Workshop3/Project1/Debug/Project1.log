@@ -1,0 +1,5 @@
+﻿  army.cpp
+C:\Users\sharm\Desktop\OOP244-NKHAN\Workshop3\Project1\Project1\army.cpp(12,18): warning C4553: '==': result of expression not used; did you intend '='?
+C:\Users\sharm\Desktop\OOP244-NKHAN\Workshop3\Project1\Project1\army.cpp(91,17): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\sharm\Desktop\OOP244-NKHAN\Workshop3\Project1\Project1\army.cpp(99,18): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+  Project1.vcxproj -> C:\Users\sharm\Desktop\OOP244-NKHAN\Workshop3\Project1\Debug\Project1.exe

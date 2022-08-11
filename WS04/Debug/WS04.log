@@ -1,0 +1,11 @@
+﻿main.obj : error LNK2005: "public: __thiscall sdds::CarInventory::CarInventory(char const *,char const *,char const *)" (??0CarInventory@sdds@@QAE@PBD00@Z) already defined in CarInventory.obj
+main.obj : error LNK2005: "public: __thiscall sdds::CarInventory::CarInventory(char const *,char const *,char const *,int,int,double)" (??0CarInventory@sdds@@QAE@PBD00HHN@Z) already defined in CarInventory.obj
+main.obj : error LNK2005: "public: __thiscall sdds::CarInventory::CarInventory(void)" (??0CarInventory@sdds@@QAE@XZ) already defined in CarInventory.obj
+main.obj : error LNK2005: "public: __thiscall sdds::CarInventory::~CarInventory(void)" (??1CarInventory@sdds@@QAE@XZ) already defined in CarInventory.obj
+main.obj : error LNK2005: "bool __cdecl sdds::find_similar(class sdds::CarInventory * const,int)" (?find_similar@sdds@@YA_NQAVCarInventory@1@H@Z) already defined in CarInventory.obj
+main.obj : error LNK2005: "public: bool __thiscall sdds::CarInventory::isSimilarTo(class sdds::CarInventory const &)const " (?isSimilarTo@CarInventory@sdds@@QBE_NABV12@@Z) already defined in CarInventory.obj
+main.obj : error LNK2005: "public: bool __thiscall sdds::CarInventory::isValid(void)const " (?isValid@CarInventory@sdds@@QBE_NXZ) already defined in CarInventory.obj
+main.obj : error LNK2005: "public: void __thiscall sdds::CarInventory::printInfo(void)const " (?printInfo@CarInventory@sdds@@QBEXXZ) already defined in CarInventory.obj
+main.obj : error LNK2005: "private: void __thiscall sdds::CarInventory::resetInfo(void)" (?resetInfo@CarInventory@sdds@@AAEXXZ) already defined in CarInventory.obj
+main.obj : error LNK2005: "public: class sdds::CarInventory & __thiscall sdds::CarInventory::setInfo(char const *,char const *,char const *,int,int,double)" (?setInfo@CarInventory@sdds@@QAEAAV12@PBD00HHN@Z) already defined in CarInventory.obj
+C:\Users\sharm\Desktop\School 2021-2022\OOP244\2022\WS04\Debug\WS04.exe : fatal error LNK1169: one or more multiply defined symbols found

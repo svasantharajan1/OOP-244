@@ -1,0 +1,8 @@
+In this Workshop 4 at home part of 2 of the workshop we are using the skills to 
+create different constructor like we had two in this DIY for default and one to 
+accept the array from the main.cpp. We learned about destructors which are used
+if some condition is not met so we used to delete the object so we don't have memory leak 
+issues. We learned how to inialize variables given from the main.cpp using set method, which 
+takes the parameters. We have added queries function such as getLocation, getBattery, getBrush, isActive, and isValid
+which will return us variables which helps the int report global function which 
+takes the variables to form a array to print out the variables. 
